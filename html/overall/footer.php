@@ -35,3 +35,4 @@
   <script src="views/smooth-scroll/SmoothScroll.js"></script>
   <script src="views/jarallax/jarallax.js"></script>
   <script src="views/mobirise/js/script.js"></script>
+  <script src="views/app/js/generales.js"></script>
