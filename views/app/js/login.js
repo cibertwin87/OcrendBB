@@ -1,9 +1,12 @@
 function goLogin(){
 var connect, form, response, result, user, pass, sesion;
 user = __('user_login').value;
-user = __('pass_login').value;
-user = __('session_login').value;
-form = 'variable=contenido';
+pass = __('pass_login').value;
+sesion = __('session_login').checked ? true : false;
+// en form vamos a poner las variables que le vamos a enviar a Ajax.
+// lo haremos como si tratara de un envio POST por la URL pero se hara por GET y estos datos se envian
+// de forma encriptada (se ve mas abajo en connect.open, connect.setRequestHeader y connect.send)
+form = 'user=' + user + '&pass=' + pass + '&sesion=' + sesion;
 // la coneccion entre Ajax y el servidor. Existen dos maneras o protocolos
 // que son los que estan en amarillo dependiendo del navegador que estemos utilizando
 // asi que para que funcione 100% la comunicacion entre Ajax y el servidor
@@ -20,7 +23,7 @@ connect.onreadystatechange = function () {
         result  =  '<div class="alert alert-dismissible alert-success">';
         result +=  '<button type="button" class="close" data-dismiss="alert">&times;</button>';
         result +=  '<h4>Conectado</h4>';
-        result +=  '<p><strong>Te estoy redireccionando...</strong></p>';
+        result +=  '<p><strong>Todo ok, te encontre en la BD. Ahora te estoy redireccionando...</strong></p>';
         result +=  '</div>';
         __('_AJAX_LOGIN_').innerHTML = result;
         // una vez que el usuario se logee la pagina se recarga
