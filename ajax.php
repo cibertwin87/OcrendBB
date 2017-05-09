@@ -19,6 +19,10 @@ if ($_POST) {
         require('core/bin/ajax/goReg.php');
         break;
 
+        case 'lostpass':
+          require('core/bin/ajax/goLostpass.php');
+          break;
+
     default:
       header('location: index.php');
       break;

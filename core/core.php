@@ -21,6 +21,7 @@ require('core/models/classConexion.php');
 require('core/bin/funtions/Encrypt.php');
 require('core/bin/funtions/Users.php');
 require('core/bin/funtions/EmailTemplate.php');
+require('core/bin/funtions/LostpassTemplate.php');
 
 #Constantes de PHPMailer
 define('PHPMAILER_HOST','p3plcpnl0173.prod.phx3.secureserver.net');

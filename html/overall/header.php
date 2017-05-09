@@ -13,7 +13,8 @@
   <link rel="stylesheet" href="views/socicon/css/socicon.min.css">
   <link rel="stylesheet" href="views/mobirise/css/style.css">
   <link rel="stylesheet" href="views/mobirise/css/mbr-additional.css" type="text/css">
-  <link rel="stylesheet" href="views/fontawesome/css/font.css" type="text/css">
+  <link rel="stylesheet" href="views/mobirise/css/style.css">
+  <link rel="stylesheet" href="views/app/css/format.css" type="text/css">
   <!-- <script src="views/app/js/generales.js"></script> -->
 
   <title><?php echo PAGE_TITTLE; ?></title>
